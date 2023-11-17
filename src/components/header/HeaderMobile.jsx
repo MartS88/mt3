@@ -1,9 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import MobileLogo from "./mobilelogo/MobileLogo";
 import s from "./Header.module.scss";
 
 
 const HeaderMobile = () => {
+
+
+    const [data, setData] = useState([])
+
+    const fetchData = async () => {
+
+        try {
+            const response = await fetch('https://v6.exchangerate-api.com/v6/90a3ed2ace3ade4c8c1f0b36/latest/USD ')
+            const jsonData =  await response.json()
+            setData(jsonData)
+        }
+        catch (error){
+            console.error('Error fetching data', error)
+        }
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, []);
+
     return (
         <>
             <div className={s.menu_block}>
@@ -44,9 +64,12 @@ const HeaderMobile = () => {
                     </div>
 
                     <div className={s.up_div2}>
+
+                        {data && (
                         <span className={s.exchange_result}>
-                            $1.07
+                          ${data?.conversion_rates?.EUR.toFixed(2)}
                         </span>
+                        )}
 
                         <span className={s.currency}>
                             for 1 EUR

@@ -1,10 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Header.module.scss'
 import Logo from "./logo/Logo";
 import {useMediaQuery} from "react-responsive";
 import HeaderMobile from "./HeaderMobile";
 const Header = () => {
     const isMobile = useMediaQuery({maxWidth: 765});
+    const [data, setData] = useState([])
+    const fetchData = async () => {
+
+
+          try {
+              const response = await fetch('https://v6.exchangerate-api.com/v6/90a3ed2ace3ade4c8c1f0b36/latest/USD ')
+              const jsonData = await response.json()
+              setData(jsonData)
+          }
+          catch (error){
+              console.error('Error fetching data', error)
+          }
+
+    }
+    useEffect(() => {
+        fetchData();
+
+    }, [])
 
 
 
@@ -56,9 +74,12 @@ const Header = () => {
                     </div>
 
                     <div className={s.up_div2}>
+
+                        {data && (
                         <span className={s.exchange_result}>
-                            $1.07
+                               {data?.conversion_rates?.EUR}
                         </span>
+                        )}
 
                         <span className={s.currency}>
                             for 1 EUR

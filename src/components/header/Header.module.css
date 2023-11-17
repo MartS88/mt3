@@ -324,14 +324,19 @@ header .vector_block .time_block .time_block_div .date {
   }
   header .vector_block .up_block {
     height: 92px;
-    padding: 32px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 16px;
   }
   header .vector_block .up_block .up_div {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  header .vector_block .up_block .up_div img {
+    margin: 0;
+    transform: translateY(0) !important;
   }
   header .vector_block .up_block .up_div span {
     font-family: "Prompt";

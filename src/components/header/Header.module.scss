@@ -375,16 +375,23 @@ header {
 
       .up_block {
         height: 92px;
-        padding: 32px;
         display: flex;
-
+        justify-content: space-between;
         align-items: center;
+        padding: 16px;
 
         .up_div {
           display: flex;
           align-items: center;
           gap: 10px;
 
+          img {
+            margin: 0;
+            transform: translateY(0)!important;
+
+
+
+          }
           span {
             font-family: 'Prompt';
             font-weight: 500;
