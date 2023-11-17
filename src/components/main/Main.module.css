@@ -1,0 +1,103 @@
+main {
+  width: 100%;
+  height: 616px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+main h2 {
+  width: 780px;
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #FFFFFF;
+}
+main .main_icons {
+  height: 196px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 60px;
+}
+main .main_icons .main_icon {
+  width: 353px;
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .main_icons .main_icon .icon_title {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+main .main_icons .main_icon .about {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #919CA2;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    height: auto;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  main h2 {
+    width: 100%;
+    font-size: 28px !important;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+  main .main_icons {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 32px;
+  }
+  main .main_icons .main_icon {
+    width: 328px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  main .main_icons .main_icon .icon_title {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  main .main_icons .main_icon .about {
+    width: 328px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #919CA2;
+  }
+}
+
+/*# sourceMappingURL=Main.module.css.map */

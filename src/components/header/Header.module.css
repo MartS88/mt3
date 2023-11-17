@@ -1,0 +1,433 @@
+header {
+  width: 100%;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header::after {
+  position: absolute;
+  background: url("../../assets/background.png") center/cover no-repeat;
+  width: 1920px;
+  height: 1180px;
+  top: 0px;
+  left: 0px;
+  content: "";
+  pointer-events: none;
+}
+header .menu_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+header .menu_block .button_block {
+  width: 281px;
+  height: 58px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+header .menu_block .button_block .open_account {
+  width: 133px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #919CA2;
+  background: transparent;
+  gap: 2px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #D9DEE2;
+  cursor: pointer;
+}
+header .header_block_wrapped {
+  width: 100%;
+  height: 394px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+header .header_block_wrapped .header_block {
+  width: 100%;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+header .header_block_wrapped .header_block h1 {
+  width: 100%;
+  font-family: "Prompt";
+  font-size: 48px;
+  line-height: 62px;
+  color: #FFFFFF;
+}
+header .header_block_wrapped .header_block span {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #919CA2;
+}
+header .header_block_wrapped .header_block .start_now_button {
+  width: 180px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px 0px 16px 0px;
+  background: #8A24F3;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+header .vector_block {
+  width: 100%;
+  height: 494px;
+  background: #252F3C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px 24px 0px 0px;
+  margin-bottom: 120px;
+}
+header .vector_block .up_block {
+  padding: 32px;
+  height: 154px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header .vector_block .up_block .up_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .vector_block .up_block .up_div span {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+header .vector_block .up_block .up_div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .vector_block .up_block .up_div2 .exchange_result {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+header .vector_block .up_block .up_div2 .currency {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #919CA2;
+}
+header .vector_block .down_block {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1E2732;
+}
+header .vector_block .down_block .chat_area_block {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header .vector_block .down_block .chat_area_block .chat_area {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+header .vector_block .down_block .chat_area_block .day {
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #8A24F3;
+  padding: 16px 36px 12px 36px;
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+header .vector_block .time_block {
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .vector_block .time_block .time_block_div {
+  display: flex;
+  flex-direction: column;
+}
+header .vector_block .time_block .time_block_div .time {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+header .vector_block .time_block .time_block_div .date {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: #919CA2;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding-top: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header::after {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  header .menu_block {
+    width: 100%;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  header .menu_block .button_block {
+    width: 281px;
+    height: 58px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+  }
+  header .menu_block .button_block .open_account {
+    width: 133px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #919CA2;
+    background: transparent;
+    gap: 2px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #D9DEE2;
+    padding: 0px 4px 0px 4px;
+    cursor: pointer;
+  }
+  header .header_block {
+    width: 100%;
+    height: 108px;
+    padding: 0 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  header .header_block h1 {
+    width: 100%;
+    font-family: "Prompt";
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    align-self: start;
+  }
+  header .header_block span {
+    width: 100%;
+    height: 48px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #919CA2;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+  header .header_block .start_now_button {
+    width: 180px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px 0px 16px 0px;
+    background: #8A24F3;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+  }
+  header .background {
+    transform: translateY(-20%);
+    pointer-events: none;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  header .background img {
+    pointer-events: none;
+  }
+  header .vector_block {
+    width: 328px;
+    height: 432px;
+    background: #252F3C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 24px 24px 24px 24px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+  header .vector_block .up_block {
+    height: 92px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+  }
+  header .vector_block .up_block .up_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header .vector_block .up_block .up_div span {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  header .vector_block .up_block .up_div2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .vector_block .up_block .up_div2 .exchange_result {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+  header .vector_block .up_block .up_div2 .currency {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #919CA2;
+  }
+  header .vector_block .down_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1E2732;
+    overflow: hidden;
+  }
+  header .vector_block .down_block .chat_area_block {
+    margin-top: 40px;
+    height: 46px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .vector_block .down_block .chat_area_block .chat_area {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  header .vector_block .down_block .chat_area_block .day {
+    width: 85px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #8A24F3;
+    padding: 12px 20px 10px 20px;
+  }
+  header .vector_block .down_block .chat_area_block .day span {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  header .vector_block .time_block {
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .vector_block .time_block .time_block_div {
+    display: flex;
+    flex-direction: column;
+  }
+  header .vector_block .time_block .time_block_div .time {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+  }
+  header .vector_block .time_block .time_block_div .date {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #919CA2;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */
