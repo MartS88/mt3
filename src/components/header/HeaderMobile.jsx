@@ -11,7 +11,7 @@ const HeaderMobile = () => {
     const fetchData = async () => {
 
         try {
-            const response = await fetch('https://v6.exchangerate-api.com/v6/90a3ed2ace3ade4c8c1f0b36/latest/USD ')
+            const response = await fetch('https://v6.exchangerate-api.com/v6/90a3ed2ace3ade4c8c1f0b36/latest/EUR ')
             const jsonData =  await response.json()
             setData(jsonData)
         }
@@ -22,6 +22,7 @@ const HeaderMobile = () => {
 
     useEffect(() => {
         fetchData()
+
     }, []);
 
     return (
@@ -67,7 +68,7 @@ const HeaderMobile = () => {
 
                         {data && (
                         <span className={s.exchange_result}>
-                          ${data?.conversion_rates?.EUR.toFixed(2)}
+                          ${data?.conversion_rates?.USD.toFixed(2) ?? 'N/A'}
                         </span>
                         )}
 
