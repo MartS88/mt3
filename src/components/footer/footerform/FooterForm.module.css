@@ -171,7 +171,7 @@ span {
 
 @media screen and (max-width: 767px) {
   .form_back {
-    width: 328px;
+    width: 340px;
     flex-direction: column;
     height: auto;
     gap: 0px;
