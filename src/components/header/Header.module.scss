@@ -11,14 +11,15 @@ header {
   &::after {
 
     background: url('../../assets/background.png') center/cover no-repeat;
-    width: 1920px;
+    width: 1500px;
     height: 1180px;
     content: '';
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-60%, 0%);
     z-index: 1;
+
   }
 
 
@@ -254,6 +255,28 @@ header {
   }
 }
 
+
+@media screen and (max-width: 1660px) {
+
+  header {
+    position: relative;
+
+    &::after {
+
+      background: url('../../assets/background.png') center/cover no-repeat;
+      content: '';
+      position: absolute;
+      width: 1460px;
+      top: 0%;
+      left: 50%;
+      transform: translate(-58%, 0%);
+      z-index: 1;
+
+
+    }
+  }
+
+  }
 
 @media screen and (max-width: 767px) {
 
