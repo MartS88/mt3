@@ -22,7 +22,7 @@ const Header = () => {
               const response = await    fetch('https://openapiv1.coinstats.app/fiats', options)
               const jsonData = await response.json()
               setData(jsonData[8].rate)
-              console.log('data', data)
+
           }
           catch (error){
               console.error('Error fetching data', error)
