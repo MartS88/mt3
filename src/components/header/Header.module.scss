@@ -23,10 +23,18 @@ header {
   .menu_block {
     width: 100%;
     display: flex;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
     margin-bottom: 120px;
+
+    img  {
+      transform: translate(0px,0px);
+      margin: 0;
+      padding: 0;
+
+    }
 
     .button_block {
       width: 281px;
@@ -262,7 +270,7 @@ header {
 
     .menu_block {
       width: 100%;
-      align-items: flex-start;
+      align-items: center!important;
       padding: 0 16px 0 16px;
       gap: 12px;
       margin-bottom: 40px;

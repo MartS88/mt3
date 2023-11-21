@@ -299,7 +299,7 @@ span {
     margin-bottom: 12px;
     margin-top: 16px;
   }
-  img {
+  .bank_img {
     margin-top: auto;
     transform: translateY(17px) !important;
   }

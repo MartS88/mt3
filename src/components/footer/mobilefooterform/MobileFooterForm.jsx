@@ -269,7 +269,7 @@ const MobileFooterForm = () => {
                 </p>
             </form>
 
-            <img src={require('../../../assets/safe2.png')} draggable={false}/>
+            <img src={require('../../../assets/safe2.png')} draggable={false} className={s.bank_img}/>
         </div>
     );
 };

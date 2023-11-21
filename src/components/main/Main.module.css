@@ -73,12 +73,15 @@ main .main_icons .main_icon .about {
   }
   main .main_icons .main_icon {
     width: 328px;
-    height: 175px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
+  }
+  main .main_icons .main_icon img {
+    transform: translateY(0px) !important;
   }
   main .main_icons .main_icon .icon_title {
     font-family: "Prompt";

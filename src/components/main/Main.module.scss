@@ -87,13 +87,18 @@ main {
 
 
       .main_icon {
+
         width: 328px;
-        height: 175px;
+        height: 180px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 16px;
+
+        img  {
+          transform: translateY(0px) !important;
+        }
 
         .icon_title {
 
