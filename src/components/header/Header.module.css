@@ -223,7 +223,7 @@ header .vector_block .time_block .time_block_div .date {
   }
   header .menu_block {
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 16px 0 16px;
     gap: 12px;
     margin-bottom: 40px;
