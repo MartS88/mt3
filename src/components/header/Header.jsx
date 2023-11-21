@@ -21,7 +21,7 @@ const Header = () => {
 
               const response = await    fetch('https://openapiv1.coinstats.app/fiats', options)
               const jsonData = await response.json()
-              setData(jsonData[8].rate)
+              setData(jsonData[8]?.rate)
 
           }
           catch (error){
@@ -89,7 +89,7 @@ const Header = () => {
 
                         {data && (
                         <span className={s.exchange_result}>
-                               {(1 / data).toFixed(2) ?? '1.08'}
+                               {(1 / data)?.toFixed(2) ?? '1.08'}
                         </span>
                         )}
 
