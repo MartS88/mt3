@@ -8,14 +8,15 @@ header {
   align-items: center;
 }
 header::after {
-  position: absolute;
   background: url("../../assets/background.png") center/cover no-repeat;
   width: 1920px;
   height: 1180px;
-  top: 0px;
-  left: 0px;
   content: "";
-  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
 }
 header .menu_block {
   width: 100%;
@@ -63,6 +64,7 @@ header .header_block_wrapped {
   justify-content: center;
   align-items: center;
   margin-bottom: 120px;
+  z-index: 10;
 }
 header .header_block_wrapped .header_block {
   width: 100%;
@@ -215,6 +217,7 @@ header .vector_block .time_block .time_block_div .date {
 
 @media screen and (max-width: 767px) {
   header {
+    width: 328px;
     padding-top: 16px;
     margin-bottom: 40px;
     display: flex;
